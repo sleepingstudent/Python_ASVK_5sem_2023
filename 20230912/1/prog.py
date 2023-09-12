@@ -1,3 +1,3 @@
 a = eval(input())
 a.sort()
-print(*a)
+print(*a, sep = ", ")
