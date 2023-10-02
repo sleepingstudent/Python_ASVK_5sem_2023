@@ -1,7 +1,8 @@
 a = []
-while tmp := input():
-    a.append(eval(tmp))
+a.append(eval(input()))
 n = len(a[0])
+for i in range(n * 2 - 1):
+    a.append(eval(input()))
 ans = [[0] * n for i in range(n)]
 for i in range(n):
     for j in range(n):
