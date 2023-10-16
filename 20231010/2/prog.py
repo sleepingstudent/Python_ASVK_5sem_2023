@@ -28,6 +28,6 @@ for i in range(0, w):
         for j in range(y + 1, y_lst):
             scr[j][i - (((y - y_lst) // 2) > j)] = '*'
     y_lst = y
-tmp = "\n".join(["".join(s) for s in scr])
+tmp = "\n".join(["".join(s) for s in scr[::-1]])
 print(tmp)
 
