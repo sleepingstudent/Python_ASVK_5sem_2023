@@ -1,0 +1,6 @@
+:memas x y z h x**2+y**3+z-h
+memas 1 1 1 3
+:ord x ord(x)
+ord "a"
+quit "   {}   {}    "
+

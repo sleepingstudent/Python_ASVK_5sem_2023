@@ -1,0 +1,6 @@
+:cos x cos(x)
+cos 0
+:abs x abs(x)
+abs -10
+cos 3
+quit "___{}^^{}___"

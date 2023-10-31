@@ -1,0 +1,7 @@
+:pi pi
+pi
+:range x y range(x,y)
+range -10 10
+range 0 0
+quit "python{} {}python"
+
