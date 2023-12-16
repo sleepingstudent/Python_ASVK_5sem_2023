@@ -1,0 +1,7 @@
+store 111 tr
+store 222 rrr
+store 333 pre
+
+loo: mul tr rrr tr
+out tr
+ifgt pre tr loo

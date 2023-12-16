@@ -1,0 +1,12 @@
+class A:
+	num = Num()
+
+print(A().num)
+c, d = A(), A()
+c.num = 2
+d.num = 1+1j
+print(d.num)
+c.num = "tratata"
+print(c.num+d.num)
+d.num = range(-10, 1000, 7)
+print(c.num+d.num)

@@ -1,0 +1,18 @@
+@objcount
+class A:
+    def __init__(self, yes=None, **kwargs):
+        print('Start!')
+        self.yes = yes
+        self.counter = 100
+
+    def __str__(self):
+        return f'{self.__class__.counter} rtr'
+
+    def __repr__(self):
+        return f'{self.__class__.counter} trt'
+
+    def __del__(self):
+        print('Del')
+
+a = [str(A()) for i in range(6)]
+print(a[0] + a[1], a[2] + a[3], a[5], a[4] + a[1])

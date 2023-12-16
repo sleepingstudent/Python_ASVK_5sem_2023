@@ -1,0 +1,11 @@
+a, b = Omnibus(), Omnibus()
+del a.random, b.y, a.t, b.kkk
+a.i = a.j = a.k = b.n = b.kkk = True
+b.j = b.k = b.n = False
+print(a.i, a.j, a.k, b.j, b.k, b.n)
+del a.k, b.n
+print(a.i, a.j, b.j, b.k)
+del a.k, b.y
+print(a.i, a.j, b.j, b.k)
+a.k = b.i = b.y = 43
+print(a.i, a.j, a.k, b.j, b.k, b.kkk)

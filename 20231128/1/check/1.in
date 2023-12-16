@@ -1,0 +1,10 @@
+class A(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def macm1(self, *args, **kwargs):
+        print(args, kwargs)
+
+c = A(10)
+A(120)
+c.macm1(3, 2, 3, a = 1)

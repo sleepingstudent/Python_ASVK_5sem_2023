@@ -1,0 +1,34 @@
+from timeit import timeit
+
+al = Alpha(a=3, b=5, c=9, z=0, v=1)
+al1 = AlphaQ(a=3, b=5, c=9, z=0, v=1)
+
+alpt = timeit("""
+try:
+    al.ttt = 1
+except AttributeError:
+    print('okay', end=' ')
+
+try:
+    print(al.ttt)
+except AttributeError:
+    print('okay', end=' ')
+""", number=5000, globals = globals())
+
+print('\n')
+
+alqt = timeit("""
+try:
+    al1.ttt = 1
+except AttributeError:
+    print('okay', end=' ')
+
+try:
+    print(al1.ttt)
+except AttributeError:
+    print('okay', end=' ')
+""", number=5000, globals = globals())
+
+print('\n')
+
+print(alpt < alqt)

@@ -1,0 +1,11 @@
+class A:
+	num = Num()
+	num1 = Num()
+
+c = A()
+print(c.num, c.num1)
+c.num = 0x123
+c.num1 = ['m', 'e', 'm', 'c', 'h', 'i', 'k']
+print(c.num, c.num1, c.num + c.num1)
+c.num = 'tratata'
+print(c.num, c.num1, c.num + c.num1)

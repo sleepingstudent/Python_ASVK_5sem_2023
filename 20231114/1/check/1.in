@@ -1,0 +1,19 @@
+@objcount
+class A:
+    def __init__(self, yes=None, **kwargs):
+        self.yes = yes
+        self.counter = 100
+
+    def __str__(self):
+        return f'{self.__class__.counter} rtr'
+
+    def __str__(self):
+        return f'{self.__class__.counter} trt'
+
+
+a = [A(i, h=i) for i in range(100)]
+b = [A(i, h=i) for i in range(10)]
+print(*b)
+print(*a)
+c=A()
+print(c)

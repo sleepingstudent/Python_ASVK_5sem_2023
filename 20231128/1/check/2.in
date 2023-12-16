@@ -1,0 +1,10 @@
+class A(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
+
+    def __str__(self):
+        return f"{self.val}"
+
+c = A(10)
+print(c)
+print(A(120))

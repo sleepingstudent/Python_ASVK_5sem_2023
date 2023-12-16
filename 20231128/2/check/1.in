@@ -1,0 +1,4 @@
+store 100 a
+out a
+ifeq a a loo
+loo:

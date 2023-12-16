@@ -1,0 +1,12 @@
+a, b, c, d = Omnibus(), Omnibus(), Omnibus(), Omnibus()
+del a.random
+a.i = a.j = a.k = a.g = a.kkk = 82
+b.j = b.k = b.n = b.s = b.g= False
+c.k = c.n = c.m = c.s = hex
+print(a.i, a.j, a.k, a.kkk, a.g, b.j, b.k, b.n, b.s, b.g, c.k, c.n, c.m, c.s)
+del a.k, b.n, c.m, c.s
+print(a.i, a.j, b.j, b.k, b.s, b.g, c.k, c.n)
+del a.k, c.m, c.s, b.kkk
+print(a.i, a.j, b.j, b.k, c.k, c.n)
+a.k = b.i = c.m = "rtrt"
+print(a.i, a.j, a.k, b.j, b.k, c.k, c.n, c.m, a.kkk)

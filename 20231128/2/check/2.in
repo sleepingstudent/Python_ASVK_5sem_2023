@@ -1,0 +1,4 @@
+store 222 b
+out b
+ifeq b b loop
+loo:
